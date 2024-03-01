@@ -2,9 +2,6 @@ import React from "react";
 
 import NewHome from "./Newhome/NewHome";
 import LottieFile from "./LottieFile";
-import n1 from "../../img/n1.jpg";
-import n2 from "../../img/n2.jpg";
-import n3 from "../../img/n3.jpg";
 
 const Home = () => {
   return (
@@ -16,7 +13,7 @@ const Home = () => {
           <br />
           <h1>
             <span>
-              Find Your <span style={{ color: "red" }}>Intern here</span>
+              Find Your <span style={{ color: "red" }}>Intern here.</span>
             </span>{" "}
           </h1>{" "}
           <br />
