@@ -14,7 +14,7 @@ function FullPage() {
   console.log("id: " + localhost);
 
   
-  // http://localhost:4500 
+ 
   const [newvalue1, setvalue] = useState({});
 
   useEffect(() => {
@@ -26,8 +26,6 @@ function FullPage() {
       });
   }, []);
 
-
-  console.log("data:", newvalue1);
 
   return (
     <div>

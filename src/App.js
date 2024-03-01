@@ -1,5 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link ,Redirect} from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Redirect,
+} from "react-router-dom";
 
 import Home from "./Component/Home/Home1/Home.js";
 
@@ -22,7 +28,6 @@ import CompanySignUp from "./Components4/CompanySignUp/CompanySignUp";
 import Review from "./Components7last/Review/ReviewNayeem";
 import ApproveCV from "./Components3/ApproveCV/ApproveCV";
 import HireU from "./Components7last/HireU/HireU";
-
 
 
 function App() {
@@ -51,14 +56,13 @@ function App() {
           </PrivateRoute>
 
           <PrivateRoute path="/FormCV">
-          {/* Redirect from /old-path to /new-path */}
-          <Redirect to="/" />
-        </PrivateRoute>
+            {/* Redirect from /old-path to /new-path */}
+            <Redirect to="/" />
+          </PrivateRoute>
 
           <Route path="/login">
             <Login />
           </Route>
-          
 
           <NewPrivateRouter path="/company/nayeem">
             <Company />
@@ -92,14 +96,6 @@ function App() {
           <Route path="/companylogin">
             <CompanyLogin />
           </Route>
-
-          {/* <Route exact path="/registration">
-            <Registration />
-          </Route>
-
-          <Route exact path="/event">
-            <Event />
-          </Route> */}
 
           <Route path="/admin">
             <Admin />
