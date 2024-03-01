@@ -14,14 +14,17 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const NewHome = () => {
+  const [loading,setLoading] = useState(false)
   const classes = useStyles();
   const [alldata, setalldata] = useState([]);
   useEffect(() => {
+    setLoading(true)
     fetch("https://internhunt-24.onrender.com/event")
       .then((res) => res.json())
       .then((data) => {
         console.log("sata",data)
         setalldata(data)
+        setLoading(false)
       });
   }, []);
   const [alldata1, setalldata1] = useState("");
@@ -35,9 +38,13 @@ const NewHome = () => {
 
   shuffle(alldata);
 
+  if(loading){
+    return <div>Loading....</div>
+  }
+
   return (
     <div>
-      <small>Type Job Name</small> <br />
+     { !loading && <div> <small>Type Job Name</small> <br /></div> }
       <input
         type="text"
         class="form-control"
