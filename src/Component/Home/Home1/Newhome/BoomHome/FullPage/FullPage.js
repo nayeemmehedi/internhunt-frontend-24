@@ -26,7 +26,7 @@ function FullPage() {
       });
   }, []);
 
-
+console.log("done")
   return (
     <div>
       <div>
