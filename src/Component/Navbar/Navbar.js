@@ -51,7 +51,7 @@ const Navbar = () => {
               >
                 {" "}
                 <span style={{ color: "blue" }}>
-                  {/* <FontAwesomeIcon icon={faFeatherAlt} /> */}
+                  <FontAwesomeIcon icon={faFeatherAlt} />
                   INTERN{" "}
                 </span>{" "}
                 HUNT
