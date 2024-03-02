@@ -23,7 +23,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "NODE_ENV=production node_modules/react-scripts/bin/react-scripts.js start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -45,5 +45,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "C:\\Windows\\System32>nvm install 16 Downloading node.js version 16.20.2 (64-bit)...",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nayeemmehedi/internhunt-frontend-24.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nayeemmehedi/internhunt-frontend-24/issues"
+  },
+  "homepage": "https://github.com/nayeemmehedi/internhunt-frontend-24#readme"
 }
